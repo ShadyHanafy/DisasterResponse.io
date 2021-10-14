@@ -40,13 +40,13 @@ There are 2 notebooks and 2 datasets available here to showcase work related to 
 
 ## Results<a name="results"></a>
 
-** Visualization for Genre Distribution
+# Visualization for Genre Distribution
 ![This is an image](https://github.com/ShadyHanafy/DisasterResponse.io/blob/main/visualize1.png)
 
-** Visualization for Top Categories Distribution
+# Visualization for Top Categories Distribution
 ![This is an image](https://github.com/ShadyHanafy/DisasterResponse.io/blob/main/visualize2.png)
 
-** Classification Model Accuracy
+# Classification Model Accuracy
 Category	precision	recall	f1-score	support
 related	0.78	0.8	0.78	18352
 request	0.85	0.86	0.85	18352
