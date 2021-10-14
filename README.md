@@ -9,11 +9,18 @@
 
 ## Installation <a name="installation"></a>
 
-There should be no necessary libraries to run the code here beyond the Anaconda distribution of Python.  The code should run with no issues using Python versions 3.*.
+The code should run with no issues using Python versions 3. The libraries to run the code here beside the Anaconda distribution of Python as as follow:
+* sqlalchemy
+* nltk
+* re
+* pandas
+* sklearn
+* pickle
+* sys
 
 ## Project Motivation<a name="motivation"></a>
 
-For this project, the goal is to analyze disaster data and classifiy the messages into categories for fast response detection from Figure Eight to build a model for that purpose over 3 steps:
+For this project, the goal is to analyze disaster response data and classifiy the messages into categories for fast response detection from Figure Eight to build a model for that purpose over 3 steps:
 
 1. Use ETL Pipeline to explore, clean and analyze the data then store that final table in sql DB
 2. Use ML Pipeline to load the stored data, build a classifier model, train it and predict till the highest accuracy
@@ -25,9 +32,7 @@ For this project, the goal is to analyze disaster data and classifiy the message
 There are 2 notebooks and 2 datasets available here to showcase work related to the above steps. Markdown cells were used to assist in walking through the thought process for individual steps.  
 1. ETL Pipeline Preparation.ipynb : Explore the  dataset and understand the messages classification
 2. ML Pipeline Preparation.ipynb : Build classifier model to predict the messages categories
-3. disaster_messages.csv: The disaster response messages
-4. disaster_categories.csv: The messages categories
-5. workspace
+3. workspace
 	- \data
 		* disaster_categories.csv: categories dataset
 		* disaster_messages.csv: messages dataset
