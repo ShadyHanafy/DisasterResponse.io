@@ -25,15 +25,15 @@ For this project, the goal is to analyze disaster data and classifiy the message
 There are 2 notebooks and 2 datasets available here to showcase work related to the above steps. Markdown cells were used to assist in walking through the thought process for individual steps.  
 1. ETL Pipeline Preparation.ipynb : Explore the  dataset and understand the messages classification
 2. ML Pipeline Preparation.ipynb : Build classifier model to predict the messages categories
-3. Price_Predict.ipynb : Model to try to predict the prices
-4. disaster_messages.csv: The disaster response messages
-5. disaster_categories.csv: The messages categories
-6. workspace
+3. disaster_messages.csv: The disaster response messages
+4. disaster_categories.csv: The messages categories
+5. workspace
 	- \data
 		--disaster_categories.csv: categories dataset
 		--disaster_messages.csv: messages dataset
 		--DisasterResponse.db: disaster response database
 		--process_data.py: built using ETL Pipeline.ipyb code
+		
 	- \models
 		--train_classifier.py: built using ML Pipeline.ipyb code
 
