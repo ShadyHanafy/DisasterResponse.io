@@ -47,7 +47,7 @@ There are 2 notebooks and 2 datasets available here to showcase work related to 
 ![This is an image](https://github.com/ShadyHanafy/DisasterResponse.io/blob/main/visualize2.png)
 
 # Classification Model Accuracy
-	precision	recall	f1-score	support
+Category	precision	recall	f1-score	support
 related	0.78	0.8	0.78	18352
 request	0.85	0.86	0.85	18352
 offer	0.98	0.98	0.98	18352
@@ -84,9 +84,8 @@ earthquake	0.95	0.95	0.95	18352
 cold	0.96	0.96	0.96	18352
 precision	0.9	0.93	0.91	18352
 direct_repor	0.8	0.82	0.79	18352
-Model Avg Accuracy	0.931			
-![image](https://user-images.githubusercontent.com/48498548/137370259-6a0170a5-c0bd-4942-a0d0-c68befbe1950.png)
-
+Model Accuracy	0.931			
+![image](https://user-images.githubusercontent.com/48498548/137370551-7856eb70-440c-4497-9625-727f28b1dd77.png)
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
