@@ -29,13 +29,13 @@ There are 2 notebooks and 2 datasets available here to showcase work related to 
 4. disaster_categories.csv: The messages categories
 5. workspace
 	- \data
-		#  disaster_categories.csv: categories dataset
-		#  disaster_messages.csv: messages dataset
-		#  DisasterResponse.db: disaster response database
-		#  process_data.py: built using ETL Pipeline.ipyb code
+		* disaster_categories.csv: categories dataset
+		* disaster_messages.csv: messages dataset
+		* DisasterResponse.db: disaster response database
+		* process_data.py: built using ETL Pipeline.ipyb code
 		
 	- \models
-		#  train_classifier.py: built using ML Pipeline.ipyb code
+		* train_classifier.py: built using ML Pipeline.ipyb code
 
 
 ## Results<a name="results"></a>
