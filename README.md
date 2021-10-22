@@ -45,11 +45,8 @@ There are 2 notebooks and 2 datasets available here to showcase work related to 
 
 ## Results<a name="results"></a>
 
-# Visualization for Genre Distribution
-![This is an image](https://github.com/ShadyHanafy/DisasterResponse.io/blob/main/visualize1.png)
-
-# Visualization for Top Categories Distribution
-![This is an image](https://github.com/ShadyHanafy/DisasterResponse.io/blob/main/visualize2.png)
+# FlaskAPP Visualization : http://0.0.0.0:3001/
+![This is an image](https://github.com/ShadyHanafy/DisasterResponse.io/blob/main/FlaskApp.png)
 
 # Classification Model Accuracy		
 ![image](https://github.com/ShadyHanafy/DisasterResponse.io/blob/main/visualize3.png)
