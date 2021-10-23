@@ -21,16 +21,6 @@ import pickle
 
 
 def load_data(database_filepath):
-  '''
-   Function:
-       load the table from database
-    Args:
-       database_filepath: the path of the database
-    Return:
-       X  : Messages features dataframe
-       Y  : The label
-       category names  : The labels list
-  '''
     # load data from database
     engine = create_engine('sqlite:///' + database_filepath)
     df = pd.read_sql_table('clean', engine)
@@ -41,20 +31,13 @@ def load_data(database_filepath):
     Y = df[df.columns[4:]]
     
     #Rename one value in column to ensure the column has only 2 unique values like other columns
-    Y.loc[Y['related'] == 2] = 1
+   # Y.loc[Y['related'] == 2] = 1
     category_names = Y.columns
     
     return X, Y, category_names
   
 
 def tokenize(text):
- '''
-    Function: split text into words
-    Args:
-      text: the message
-    Return:
-      lemm: a list of the origin form of the messages words
-  '''
     text = re.sub(r"[^a-zA-Z0-9]", " ", text.lower())
     
     # Tokenize text
@@ -70,11 +53,7 @@ def tokenize(text):
 
 
 def build_model():
-  '''
-     Function: build a model to classify the disaster messages
-     Return:
-       cv: The classification model
-   '''
+    
     pipeline =Pipeline([
     ('vect', CountVectorizer(tokenizer=tokenize)),
     ('tfidf', TfidfTransformer()),
@@ -99,13 +78,6 @@ def build_model():
     return cv
 
 def evaluate_model(model, X_test, Y_test, category_names):
-  '''
-    Function: Evaluate the model and print the scores for each category.
-    Args:
-    model: the classification model
-    X_test: test messages
-    Y_test: test label
-   '''
     y_pred = model.predict(X_test)
     
     #Evaluate the accuracy in each run
@@ -121,20 +93,10 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
-  '''
-    Function: Save the model into a pickle file
-    Args:
-    model: the classification model
-    model_filepath: the path of pickle file
-   '''
     pickle.dump(model, open(model_filepath, 'wb'))
 
 
 def main():
-   '''
-    Function: Run the main script
-    
-   '''
     if len(sys.argv) == 3:
         database_filepath, model_filepath = sys.argv[1:]
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))
