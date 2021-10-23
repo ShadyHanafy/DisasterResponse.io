@@ -51,6 +51,16 @@ There are 2 notebooks and 2 datasets available here to showcase work related to 
 # Classification Model Accuracy		
 ![image](https://github.com/ShadyHanafy/DisasterResponse.io/blob/main/visualize3.png)
 
+# Instructions:		
+
+Run the following commands in the project's root directory to set up your database and model.
+
+To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/drpdb.db
+To run ML pipeline that trains classifier and saves python models/train_classifier.py data/drpdb.db models/classifier.pkl
+Run the following command in the app's directory to run your web app. python run.py
+
+Go to http://0.0.0.0:3001/
+
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
 Must give credit to Figure Eight for the data.  You can find the Licensing for the data and other descriptive information at the link available [here](https://appen.com/). 
