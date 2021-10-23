@@ -23,9 +23,9 @@ The code should run with no issues using Python versions 3. The libraries to run
 
 For this project, the goal is to analyze disaster response data and classifiy the messages into categories for fast response detection from Figure Eight to build a model for that purpose over 3 steps:
 
-* 1. Use ETL Pipeline to explore, clean and analyze the data then store that final table in sql DB
-* 2. Use ML Pipeline to load the stored data, build a classifier model, train it and predict till the highest accuracy
-* 3. Store the Model into a pickle file to be used by Flask Web APP to view the categories of the messages
+1. Use ETL Pipeline to explore, clean and analyze the data then store that final table in sql DB
+2. Use ML Pipeline to load the stored data, build a classifier model, train it and predict till the highest accuracy
+3. Store the Model into a pickle file to be used by Flask Web APP to view the categories of the messages
 
 
 ## File Descriptions <a name="files"></a>
@@ -56,11 +56,10 @@ There are 2 notebooks and 2 datasets available here to showcase work related to 
 
 Run the following commands in the project's root directory to set up your database and model.
 
-To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/drpdb.db
-To run ML pipeline that trains classifier and saves python models/train_classifier.py data/drpdb.db models/classifier.pkl
-Run the following command in the app's directory to run your web app. python run.py
-
-Go to http://0.0.0.0:3001/
+1. To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/drpdb.db
+2. To run ML pipeline that trains classifier and saves python models/train_classifier.py data/drpdb.db models/classifier.pkl
+3. Run the following command in the app's directory to run your web app. python run.py
+4. Go to http://0.0.0.0:3001/
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
