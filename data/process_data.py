@@ -4,7 +4,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 def load_data(messages_filepath, categories_filepath):
-   """
+   '''
    Function:
    load data from two csv file and then merge them
    Args:
@@ -12,7 +12,7 @@ def load_data(messages_filepath, categories_filepath):
    categories_filepath : the file path of the disaster categories csv file
    Return:
     df: A dataframe of both messages and categories
-    """
+    '''
     messages = pd.read_csv(messages_filepath)
     categories = pd.read_csv(categories_filepath)
     
@@ -22,14 +22,14 @@ def load_data(messages_filepath, categories_filepath):
     return df
 
 def clean_data(df):
-   """
+   '''
    Function:
    clean the dataframe
    Args:
    df: The dataframe to be cleaned
    Return:
    df: The dataframe after cleansup
-    """
+   '''
     # create a dataframe for the columns
     categories = df['categories'].str.split(";", expand=True)
     
@@ -63,23 +63,22 @@ def clean_data(df):
 
 
 def save_data(df, database_filename):
-    """
+   '''
     Function:
     Save the dataframe to a database
     Args:
     df : The dataframe
     database_filename: The name of the database
-    """
+    '''
     engine = create_engine('sqlite:///' + database_filename)
     df.to_sql('clean', engine,if_exists='replace', index=False)    
 
 
 def main():
-   """
+   '''
    Function:
    Run the main program
-
-    """
+   '''
     if len(sys.argv) == 4:
 
         messages_filepath, categories_filepath, database_filepath = sys.argv[1:]
