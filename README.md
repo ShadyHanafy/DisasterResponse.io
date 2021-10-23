@@ -5,7 +5,7 @@
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
 4. [Results](#results)
-5. Instructions
+5. [Instructions](#instructions)
 6. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Installation <a name="installation"></a>
@@ -52,7 +52,7 @@ There are 2 notebooks and 2 datasets available here to showcase work related to 
 # Classification Model Accuracy		
 ![image](https://github.com/ShadyHanafy/DisasterResponse.io/blob/main/visualize3.png)
 
-# Instructions:		
+## Instructions<a name="instructions"></a>	
 
 Run the following commands in the project's root directory to set up your database and model.
 
